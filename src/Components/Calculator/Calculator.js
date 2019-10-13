@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Calculator.css';
+import CounterByNumber from "./CounterByNumber";
 
 class Calculator extends Component {
 
@@ -13,40 +14,25 @@ class Calculator extends Component {
 
         };
 
-        this.increment = this.increment.bind(this);
-        //this.decrement = this.decrement.bind(this);
-        //this.reset = this.reset.bind(this);
     }
 
     render() {
+
         return (
             <div className="calculator">
 
                 <h1>Calculator</h1>
 
-                <button onClick={this.increment}>+ 1</button>
+                <CounterByNumber by={1}/>
 
-                <span className="count">{this.state.counter}</span>
+                <CounterByNumber by={5}/>
+
+                <CounterByNumber by={10}/>
 
             </div>
         );
-    }
+    };
 
-    increment() {
-        //console.log('increment');
-
-        this.setState({
-            counter: this.state.counter+1
-        });
-        // this.setState(
-        //     (prevState) => {
-        //         return { counter: prevState.counter + 1 }
-        //     }
-        // );
-    }
 }
-
-
-
 
 export default Calculator;

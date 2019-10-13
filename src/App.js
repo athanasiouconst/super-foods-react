@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./Components/Header/Header";
 import Content from "./Components/Content/Content";
 import Footer from "./Components/Footer/Footer";
-import Calculator from "./Components/Calculator/Calculator";
+import CalculatorVersion1 from "./Components/Calculator/CalculatorVersion1";
 
 class App extends Component {
     render() {
@@ -14,7 +14,10 @@ class App extends Component {
 
                 <Content/>
 
-                <Calculator/>
+                {/*<Calculator/>*/}
+
+                <br/>
+                <CalculatorVersion1/>
 
                 <Footer/>
 
