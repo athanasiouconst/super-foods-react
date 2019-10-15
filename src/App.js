@@ -1,25 +1,25 @@
 import React, {Component} from 'react';
 import './App.css';
-import Header from "./Components/Header/Header";
-import Content from "./Components/Content/Content";
-import Footer from "./Components/Footer/Footer";
-import CalculatorVersion1 from "./Components/Calculator/CalculatorVersion1";
+import SuperFoodsApp from "./Components/SuperFoodsApp/SuperFoodsApp";
+
 
 class App extends Component {
     render() {
         return (
             <div className="App">
 
-                <Header/>
+                {/*<Header/>*/}
 
-                <Content/>
+                {/*<Content/>*/}
 
                 {/*<Calculator/>*/}
 
-                <br/>
-                <CalculatorVersion1/>
+                {/*<br/>*/}
+                {/*<CalculatorVersion1/>*/}
 
-                <Footer/>
+                {/*<Footer/>*/}
+
+                <SuperFoodsApp />
 
             </div>
         );
