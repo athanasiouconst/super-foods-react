@@ -30,4 +30,4 @@ class HeaderComponent extends Component {
     }
 }
 
-export default HeaderComponent;
+export default withRouter(HeaderComponent);

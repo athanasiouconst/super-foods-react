@@ -54,4 +54,4 @@ class ListSuperFoodsComponent extends Component {
     }
 }
 
-export default ListSuperFoodsComponent;
+export default withRouter(ListSuperFoodsComponent);

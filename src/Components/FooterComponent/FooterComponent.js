@@ -13,4 +13,4 @@ class FooterComponent extends Component {
     }
 }
 
-export default FooterComponent;
+export default withRouter(FooterComponent);
