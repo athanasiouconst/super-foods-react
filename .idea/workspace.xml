@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90b537fc-8a20-428d-bb6b-e9f9c1004e00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/ErrorComponent/ErrorComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/FooterComponent/FooterComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/HeaderComponent/HeaderComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/LoginComponent/LoginComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/LogoutComponent/LogoutComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SuperFoodsApp/AuthenticatedRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SuperFoodsApp/AuthenticationService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SuperFoodsComponent/ListSuperFoodsComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/WelcomeComponent/WelcomeComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/superFood/HelloWorldService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/superFood/SuperFoodDataService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -34,11 +50,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+            <state relative-caret-position="408">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1571331595079" expanded="true" signature="1717:1776" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/HeaderComponent/HeaderComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="16" column="97" selection-start-line="16" selection-start-column="97" selection-end-line="16" selection-end-column="97" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -52,14 +81,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>CounterByNum</find>
+      <find>ShowInvalidCredentials</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,7 +105,6 @@
         <option value="$PROJECT_DIR$/src/content.js" />
         <option value="$PROJECT_DIR$/src/Content.css" />
         <option value="$PROJECT_DIR$/src/Content.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Footer.js" />
         <option value="$PROJECT_DIR$/src/Components/Content/Content.js" />
         <option value="$PROJECT_DIR$/src/Components/Header/Header.js" />
@@ -92,9 +121,22 @@
         <option value="$PROJECT_DIR$/src/Components/Calculator/CalculatorRest.js" />
         <option value="$PROJECT_DIR$/src/Components/Calculator/CounterByNumber.js" />
         <option value="$PROJECT_DIR$/src/Components/Calculator/Calculator.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.css" />
+        <option value="$PROJECT_DIR$/src/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/Components/SuperFoodsApp/AuthenticatedRoute.js" />
+        <option value="$PROJECT_DIR$/src/api/superFood/TodoDataService.js" />
+        <option value="$PROJECT_DIR$/src/Components/SuperFoodsApp/AuthenticationService.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Components/LoginComponent/LoginComponent.js" />
+        <option value="$PROJECT_DIR$/src/Components/SuperFoodsComponent/ListSuperFoodsComponent.js" />
+        <option value="$PROJECT_DIR$/src/Components/FooterComponent/FooterComponent.js" />
+        <option value="$PROJECT_DIR$/src/Components/LogoutComponent/LogoutComponent.js" />
+        <option value="$PROJECT_DIR$/src/Components/WelcomeComponent/WelcomeComponent.js" />
+        <option value="$PROJECT_DIR$/src/Components/ErrorComponent/ErrorComponent.js" />
         <option value="$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.js" />
+        <option value="$PROJECT_DIR$/src/Components/HeaderComponent/HeaderComponent.js" />
       </list>
     </option>
   </component>
@@ -109,8 +151,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,7 +181,21 @@
               <item name="super-foods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="SuperFoodsApp" type="462c0819:PsiDirectoryNode" />
+              <item name="ErrorComponent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super-foods" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super-foods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="FooterComponent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super-foods" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super-foods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="HeaderComponent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,7 +207,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/SuperFoodsApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -170,14 +226,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src" />
+      <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src\Components\SuperFoodsApp" />
+      <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src\Components\Calculator" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src\Components\Content" />
       <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src\components\footer" />
       <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src\components\header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src\Components\SuperFoodsApp" />
-      <recent name="C:\WebDevelopment\IntelliJ\React and Spring Boot\super-foods\src\Components\Calculator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -220,7 +277,8 @@
       <workItem from="1570883658530" duration="3889000" />
       <workItem from="1570900406367" duration="2654000" />
       <workItem from="1570948428885" duration="9078000" />
-      <workItem from="1571150686326" duration="4401000" />
+      <workItem from="1571150686326" duration="4730000" />
+      <workItem from="1571322573298" duration="8497000" />
     </task>
     <task id="LOCAL-00001" summary="inti commti">
       <created>1570897840821</created>
@@ -250,17 +308,24 @@
       <option name="project" value="LOCAL" />
       <updated>1570975607226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add form and simple login example with methods and function">
+      <created>1571155557690</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571155557690</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20022000" />
+    <option name="totallyTimeSpent" value="28848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20200573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20487106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -300,13 +365,11 @@
     <MESSAGE value="create components" />
     <MESSAGE value="add methods and state" />
     <MESSAGE value="add props and methods inside jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add props and methods inside jsx" />
+    <MESSAGE value="add form and simple login example with methods and function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add form and simple login example with methods and function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
@@ -361,13 +424,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Calculator/Calculator.jsx" />
     <entry file="file://$PROJECT_DIR$/src/Components/Calculator/Counter1.tsx" />
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Calculator/counterByTen.js" />
     <entry file="file://$PROJECT_DIR$/src/Components/Calculator/counterByOne.js" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
@@ -435,16 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Calculator/Calculator.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -459,10 +505,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="74" selection-start-column="74" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constants.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/superFood/SuperFoodDataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/SuperFoodsApp/AuthenticationService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/SuperFoodsComponent/ListSuperFoodsComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-597">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/SuperFoodsApp/AuthenticatedRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/LogoutComponent/LogoutComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/LoginComponent/LoginComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/FooterComponent/FooterComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/WelcomeComponent/WelcomeComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/ErrorComponent/ErrorComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/SuperFoodsApp/SuperFoodsApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        <state relative-caret-position="408">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1571331595079" expanded="true" signature="1717:1776" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/HeaderComponent/HeaderComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="97" selection-start-line="16" selection-start-column="97" selection-end-line="16" selection-end-column="97" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
