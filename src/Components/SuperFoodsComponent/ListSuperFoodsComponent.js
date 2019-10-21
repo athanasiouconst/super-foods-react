@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { withRouter } from 'react-router';
+import moment from 'moment'
 
 class ListSuperFoodsComponent extends Component {
 
@@ -8,11 +9,11 @@ class ListSuperFoodsComponent extends Component {
         super(props);
         this.state = {
             superFoods: [
-                {id: 1, description: 'Superfoods Omegadvance', done: false, targetDate: new Date()},
-                {id: 2, description: 'Superfoods cod Pure oil', done: false, targetDate: new Date()},
-                {id: 3, description: 'Hippophae Superfoods', done: false, targetDate: new Date()},
-                {id: 4, description: 'Superfoods Hippophaes & Papaya', done: false, targetDate: new Date()},
-                {id: 5, description: 'Superfoods Proviomax', done: false, targetDate: new Date()},
+                {id: 1, description: 'Superfoods Omegadvance', done: false, targetDate: moment(new Date()).format('DD/MM/YYYY')},
+                {id: 2, description: 'Superfoods cod Pure oil', done: false, targetDate:moment(new Date()).format('DD/MM/YYYY')},
+                {id: 3, description: 'Hippophae Superfoods', done: false, targetDate: moment(new Date()).format('DD/MM/YYYY')},
+                {id: 4, description: 'Superfoods Hippophaes & Papaya', done: false, targetDate: moment(new Date()).format('DD/MM/YYYY')},
+                {id: 5, description: 'Superfoods Proviomax', done: false, targetDate: moment(new Date()).format('DD/MM/YYYY')},
             ]
         }
     };
