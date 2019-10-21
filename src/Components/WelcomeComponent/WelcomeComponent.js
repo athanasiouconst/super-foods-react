@@ -6,9 +6,15 @@ class WelcomeComponent extends Component {
     constructor(props) {
         super(props);
         this.retrieveMainControllerMessage = this.retrieveMainControllerMessage.bind(this);
+        this.retrieveMainControllerBeanMessage = this.retrieveMainControllerBeanMessage.bind(this);
+        this.retrieveMainControllerPathBeanMessage = this.retrieveMainControllerPathBeanMessage.bind(this);
+
         this.handleSuccessfulResponce = this.handleSuccessfulResponce.bind(this);
-        this.state ={
-            welcomeMessage : ''
+        this.handleSuccessfulBeanResponce = this.handleSuccessfulBeanResponce.bind(this);
+        this.handleSuccessfulPathBeanResponce = this.handleSuccessfulPathBeanResponce.bind(this);
+
+        this.state = {
+            welcomeMessage: ''
         }
     }
 
@@ -25,8 +31,13 @@ class WelcomeComponent extends Component {
                     <p>Main Controller from Spring Boot App</p>
                     <p>You can fetch your message form Spring Boot App by clicking <span/>
 
-                        <button className="btn btn-success" onClick={this.retrieveMainControllerMessage}>Message</button>
+
                     </p>
+                    <button className="btn btn-success" onClick={this.retrieveMainControllerMessage}>Message</button>
+                    <button className="btn btn-success" onClick={this.retrieveMainControllerBeanMessage}>Message
+                    </button>
+                    <button className="btn btn-success" onClick={this.retrieveMainControllerPathBeanMessage}>Message
+                    </button>
                 </div>
 
                 <div className="container">
@@ -45,8 +56,32 @@ class WelcomeComponent extends Component {
         ;
     }
 
-    handleSuccessfulResponce(responce){
-        this.setState({welcomeMessage : responce.data}
+    retrieveMainControllerBeanMessage() {
+
+        SuperFoodService.executeSuperFoodBeanService()
+            .then(response => this.handleSuccessfulBeanResponce(response))
+        ;
+    }
+
+    retrieveMainControllerPathBeanMessage() {
+
+        SuperFoodService.executeSuperFoodPathVariableService(this.props.match.params.name)
+            .then(response => this.handleSuccessfulPathBeanResponce(response))
+        ;
+    }
+
+    handleSuccessfulResponce(responce) {
+        this.setState({welcomeMessage: responce.data}
+        )
+    }
+
+    handleSuccessfulBeanResponce(responce) {
+        this.setState({welcomeMessage: responce.data.message}
+        )
+    }
+
+    handleSuccessfulPathBeanResponce(responce) {
+        this.setState({welcomeMessage: responce.data.message}
         )
     }
 }
