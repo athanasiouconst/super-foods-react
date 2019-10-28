@@ -39,16 +39,16 @@ class ListSuperFoodsComponent extends Component {
     //just before the component in unmount
     componentWillUnmount() {
 
-        console.log("componentWillUnmount");
+        //console.log("componentWillUnmount");
 
     }
 
 
     shouldComponentUpdate(nexrProps, nextState) {
 
-        console.log("shouldComponentUpdate");
-        console.log(nexrProps);
-        console.log(nextState);
+        //console.log("shouldComponentUpdate");
+        //console.log(nexrProps);
+        //console.log(nextState);
 
         return true
         //if false react should not render the component through the render method

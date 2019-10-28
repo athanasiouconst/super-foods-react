@@ -35,19 +35,29 @@ class LoginComponent extends Component {
 
     loginClicked() {
 
-        if (this.state.username === 'costas' && this.state.password === '1234') {
+        // if (this.state.username === 'costas' && this.state.password === '1234') {
+        //
+        //     AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password)
+        //     this.props.history.push(`/welcome/${this.state.username}`);
+        //
+        //     this.setState({showSuccessMessage: true})
+        //     this.setState({hasLoginFailed: false})
+        //
+        // } else {
+        //     this.setState({showSuccessMessage: false})
+        //
+        //     this.setState({hasLoginFailed: true})
+        // }
 
-            AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password)
-            this.props.history.push(`/welcome/${this.state.username}`);
-
-            this.setState({showSuccessMessage: true})
-            this.setState({hasLoginFailed: false})
-
-        } else {
-            this.setState({showSuccessMessage: false})
-
-            this.setState({hasLoginFailed: true})
-        }
+        AuthenticationService
+            .executeJwtAuthenticationService(this.state.username, this.state.password)
+            .then((response) => {
+                AuthenticationService.registerSuccessfulLoginForJwt(this.state.username, response.data.token)
+                this.props.history.push(`/welcome/${this.state.username}`)
+            }).catch(() => {
+            this.setState({ showSuccessMessage: false })
+            this.setState({ hasLoginFailed: true })
+        })
     }
 
     render() {
