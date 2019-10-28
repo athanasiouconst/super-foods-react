@@ -9,6 +9,7 @@ import HeaderComponent from "../HeaderComponent/HeaderComponent";
 import LogoutComponent from "../LogoutComponent/LogoutComponent";
 import WelcomeComponent from "../WelcomeComponent/WelcomeComponent";
 import ErrorComponent from "../ErrorComponent/ErrorComponent";
+import SuperFoodComponent from "../SuperFoodsComponent/SuperFoodComponent";
 
 
 class SuperFoodsApp extends Component {
@@ -24,8 +25,10 @@ class SuperFoodsApp extends Component {
                             <Route path="/" exact component={LoginComponent}></Route>
                             <Route path="/login" component={LoginComponent}></Route>
                             <AuthenticatedRoute path="/welcome/:name" component={WelcomeComponent}></AuthenticatedRoute>
+                            <AuthenticatedRoute path="/superFoods/:id"  component={SuperFoodComponent}></AuthenticatedRoute>
                             <AuthenticatedRoute path="/superFoods" component={ListSuperFoodsComponent}></AuthenticatedRoute>
                             <AuthenticatedRoute path="/logout"  component={LogoutComponent}></AuthenticatedRoute>
+
                             <Route component={ErrorComponent}></Route>
                         </Switch>
 

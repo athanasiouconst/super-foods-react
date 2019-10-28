@@ -12,6 +12,7 @@ class WelcomeComponent extends Component {
         this.handleSuccessfulResponce = this.handleSuccessfulResponce.bind(this);
         this.handleSuccessfulBeanResponce = this.handleSuccessfulBeanResponce.bind(this);
         this.handleSuccessfulPathBeanResponce = this.handleSuccessfulPathBeanResponce.bind(this);
+        this.handleErrorResponce = this.handleErrorResponce.bind(this);
 
         this.state = {
             welcomeMessage: ''
@@ -67,6 +68,7 @@ class WelcomeComponent extends Component {
 
         SuperFoodService.executeSuperFoodPathVariableService(this.props.match.params.name)
             .then(response => this.handleSuccessfulPathBeanResponce(response))
+            .catch(error => this.handleErrorResponce(error))
         ;
     }
 
@@ -82,6 +84,11 @@ class WelcomeComponent extends Component {
 
     handleSuccessfulPathBeanResponce(responce) {
         this.setState({welcomeMessage: responce.data.message}
+        )
+    }
+
+    handleErrorResponce(error) {
+        this.setState({welcomeMessage: error.response.data.message}
         )
     }
 }
