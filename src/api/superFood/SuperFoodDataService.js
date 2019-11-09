@@ -1,31 +1,31 @@
 import axios from 'axios'
-import { API_URL, JPA_API_URL } from '../../Constants'
+import { JPA_API_URL } from '../../Constants'
 
 class SuperFoodDataService {
 
-    retrieveAllTodos(name) {
+    retrieveAllSuperFood(name) {
         //console.log('executed service')
-        return axios.get(`${JPA_API_URL}/users/${name}/todos`);
+        return axios.get(`${JPA_API_URL}/${name}/superFoods`);
     }
 
-    retrieveTodo(name, id) {
+    retrieveSuperFood(name, id) {
         //console.log('executed service')
-        return axios.get(`${JPA_API_URL}/users/${name}/todos/${id}`);
+        return axios.get(`${JPA_API_URL}/${name}/superFoods/${id}`);
     }
 
-    deleteTodo(name, id) {
+    deleteSuperFood(name, id) {
         //console.log('executed service')
-        return axios.delete(`${JPA_API_URL}/users/${name}/todos/${id}`);
+        return axios.delete(`${JPA_API_URL}/${name}/superFoods/${id}`);
     }
 
-    updateTodo(name, id, todo) {
+    updateSuperFood(name, id, todo) {
         //console.log('executed service')
-        return axios.put(`${JPA_API_URL}/users/${name}/todos/${id}`, todo);
+        return axios.put(`${JPA_API_URL}/${name}/superFoods/${id}`, todo);
     }
 
-    createTodo(name, todo) {
+    addSuperFood(name, todo) {
         //console.log('executed service')
-        return axios.post(`${JPA_API_URL}/users/${name}/todos/`, todo);
+        return axios.post(`${JPA_API_URL}/${name}/superFoods/`, todo);
     }
 
 }
