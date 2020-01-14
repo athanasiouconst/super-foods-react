@@ -43,7 +43,6 @@ class ListSuperFoodsComponent extends Component {
 
     }
 
-
     shouldComponentUpdate(nexrProps, nextState) {
 
         //console.log("shouldComponentUpdate");
